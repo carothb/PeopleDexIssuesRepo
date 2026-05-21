@@ -1,0 +1,126 @@
+name: Bug report
+description: Report a defect in Android, Firebase, Play Billing, or PD Coins flows.
+title: "[Bug]: "
+labels:
+  - type:bug
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Briefly describe the problem.
+      placeholder: What is broken?
+    validations:
+      required: true
+
+  - type: input
+    id: app_version
+    attributes:
+      label: Environment - App version
+      placeholder: e.g. 1.2.3
+    validations:
+      required: true
+
+  - type: input
+    id: build_number
+    attributes:
+      label: Environment - Build number
+      placeholder: e.g. 456
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: Environment - Device
+      placeholder: e.g. Pixel 8
+    validations:
+      required: true
+
+  - type: input
+    id: android_version
+    attributes:
+      label: Environment - Android version
+      placeholder: e.g. Android 15
+    validations:
+      required: true
+
+  - type: dropdown
+    id: play_track
+    attributes:
+      label: Play track
+      options:
+        - internal
+        - closed
+        - production
+    validations:
+      required: true
+
+  - type: input
+    id: firebase_project_id
+    attributes:
+      label: Firebase project id
+      placeholder: e.g. peopledex-prod
+    validations:
+      required: true
+
+  - type: input
+    id: package_name
+    attributes:
+      label: Package name
+      placeholder: e.g. com.example.peopledex
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro_steps
+    attributes:
+      label: Repro steps
+      description: List exact steps to reproduce.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_result
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual_result
+    attributes:
+      label: Actual result
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs_screenshots
+    attributes:
+      label: Logs or screenshots
+      description: Redact secrets, tokens, and personal data before uploading.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: severity_impact
+    attributes:
+      label: Severity and impact
+      options:
+        - p0 - Service down, payments/coins unusable, or release blocked
+        - p1 - Major user impact with workaround
+        - p2 - Moderate/limited impact
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance criteria
+      description: Define conditions that must be true to consider this resolved.
+    validations:
+      required: true
