@@ -1,125 +1,35 @@
-name: Task checklist
-description: Create a structured implementation or verification task.
-title: "[Task]: "
+name: Help request
+description: Ask a question or tell us where you got stuck.
+title: "[Help]: "
 labels:
   - type:task
 body:
+  - type: markdown
+    attributes:
+      value: |
+        If you are confused, stuck, or not sure what to do, use this form.
+
   - type: textarea
-    id: summary
+    id: need_help_with
     attributes:
-      label: Summary
-      description: What needs to be done and why?
-    validations:
-      required: true
-
-  - type: input
-    id: app_version
-    attributes:
-      label: Environment - App version
-      placeholder: e.g. 1.2.3
-    validations:
-      required: true
-
-  - type: input
-    id: build_number
-    attributes:
-      label: Environment - Build number
-      placeholder: e.g. 456
-    validations:
-      required: true
-
-  - type: input
-    id: device
-    attributes:
-      label: Environment - Device
-      placeholder: e.g. Pixel 8
-    validations:
-      required: true
-
-  - type: input
-    id: android_version
-    attributes:
-      label: Environment - Android version
-      placeholder: e.g. Android 15
-    validations:
-      required: true
-
-  - type: dropdown
-    id: play_track
-    attributes:
-      label: Play track
-      options:
-        - internal
-        - closed
-        - production
-    validations:
-      required: true
-
-  - type: input
-    id: firebase_project_id
-    attributes:
-      label: Firebase project id
-      placeholder: e.g. peopledex-prod
-    validations:
-      required: true
-
-  - type: input
-    id: package_name
-    attributes:
-      label: Package name
-      placeholder: e.g. com.example.peopledex
+      label: What do you need help with?
+      description: Tell us your question or where you got stuck.
+      placeholder: I’m not sure how to update my profile photo.
     validations:
       required: true
 
   - type: textarea
-    id: repro_steps
+    id: tried
     attributes:
-      label: Repro steps
-      description: If this task validates a bug, include exact validation steps.
-    validations:
-      required: true
-
-  - type: textarea
-    id: expected_result
-    attributes:
-      label: Expected result
-    validations:
-      required: true
-
-  - type: textarea
-    id: actual_result
-    attributes:
-      label: Actual result
-      description: Use N/A if this is not yet executed.
-    validations:
-      required: true
-
-  - type: textarea
-    id: logs_screenshots
-    attributes:
-      label: Logs or screenshots
-      description: Attach only sanitized artifacts.
+      label: What have you tried so far? (optional)
+      placeholder: I tapped edit profile but couldn’t find the photo option.
     validations:
       required: false
 
-  - type: dropdown
-    id: severity_impact
-    attributes:
-      label: Severity and impact
-      options:
-        - p0 - Critical path task
-        - p1 - High priority task
-        - p2 - Standard task
-    validations:
-      required: true
-
   - type: textarea
-    id: acceptance_criteria
+    id: extra_details
     attributes:
-      label: Acceptance criteria
-      description: Provide checklist-style done conditions.
-      placeholder: |
-        - [ ] Condition 1
-        - [ ] Condition 2
+      label: Extra details (optional)
+      description: Add screenshots or anything else that may help us understand.
     validations:
-      required: true
+      required: false

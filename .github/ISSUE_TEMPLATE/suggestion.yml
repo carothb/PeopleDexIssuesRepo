@@ -1,0 +1,45 @@
+name: Suggestion
+description: Share an idea that could make PeopleDex better.
+title: "[Suggestion]: "
+labels:
+  - type:suggestion
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We’d love to hear your ideas.
+        You do not need to write this in a technical way.
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like to see?
+      description: Tell us your idea.
+      placeholder: I’d like an easier way to find people by interest.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why would this help?
+      description: Tell us what problem this would solve for you.
+      placeholder: It would make it faster to connect with the right people.
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_workaround
+    attributes:
+      label: What do you do now instead? (optional)
+      placeholder: Right now I scroll through profiles manually.
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra_details
+    attributes:
+      label: Anything else? (optional)
+      description: Add examples, screenshots, or extra context if you want.
+    validations:
+      required: false

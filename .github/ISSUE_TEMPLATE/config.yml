@@ -1,8 +1,5 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Security disclosure
+  - name: Private security issue
     url: mailto:security@peopledex.app
-    about: Report vulnerabilities privately by email.
-  - name: Discussions
-    url: https://github.com/carothb/PeopleDexIssuesRepo/discussions
-    about: Ask questions and share ideas with the community.
+    about: Please email security problems here instead of posting them publicly.

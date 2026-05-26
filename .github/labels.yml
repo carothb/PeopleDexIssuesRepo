@@ -1,36 +1,39 @@
 - name: type:bug
   color: d73a4a
-  description: Confirmed defect or regression affecting expected behavior.
+  description: Something in the app is not working the way it should.
 - name: type:release
   color: b60205
-  description: Issue that blocks or risks a release.
+  description: Internal label for issues that block a release.
 - name: type:task
   color: 0e8a16
-  description: Planned maintenance or operational work item.
+  description: General work item or help-related request.
+- name: type:suggestion
+  color: 5319e7
+  description: An idea or feature request to improve the app.
 - name: area:android
   color: 1d76db
-  description: Android client, device compatibility, or Android runtime behavior.
+  description: Android app issues.
 - name: area:firebase
   color: ff9f1c
-  description: Firebase services (App Check, config, auth, messaging, etc.).
+  description: Firebase-related issues.
 - name: area:billing
   color: 006b75
-  description: Google Play Billing, products, purchase, and entitlement flows.
+  description: Payment or billing-related issues.
 - name: area:coins
   color: 5319e7
-  description: PD Coins balance, earning, spending, and coin entitlement logic.
+  description: PD Coins issues.
 - name: priority:p0
   color: b60205
-  description: Critical production issue requiring immediate mitigation.
+  description: Very urgent issue.
 - name: priority:p1
   color: d93f0b
-  description: High-priority issue requiring prompt response.
+  description: High-priority issue.
 - name: status:blocked
   color: 000000
-  description: Work is blocked by an external dependency or prerequisite.
+  description: Waiting on something else before work can continue.
 - name: status:needs-repro
   color: fbca04
-  description: More details or reproduction are needed before triage can proceed.
+  description: More details are needed before we can investigate.
 - name: status:ready
   color: 0e8a16
-  description: Ready for implementation, validation, or release decision.
+  description: Ready to be worked on.
